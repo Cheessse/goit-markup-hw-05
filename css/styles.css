@@ -743,6 +743,7 @@ address {
 .checkbox-input:checked+.text-checkbox .span-checkbox {
     background-color: #404BBF;
     fill: #F4F4FD;
+    border: none;
 }
 
 .span-checkbox {
