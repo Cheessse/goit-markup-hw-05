@@ -427,9 +427,17 @@
                     </li>
                 </ul>
             </div>
+            <form>
+                <label for="footer-input" class="footer-label-text">Subscribe</label>
+                <input type="email" name="footer-input" class="footer-input" placeholder="E-mail" />
+                <button type="submit" class="footer-form-btn">Subscribe <svg class="icon-footer-btn" width="24"
+                        height="24">
+                        <use href="./images/icons.svg#icon-footer-btn"></use>
+                    </svg></button>
+            </form>
         </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
         <div class="modal">
             <button type="button" class="modal-close-btn">
                 <svg class="modal-btn-icon" width="8px" height="8px">
@@ -470,10 +478,21 @@
                     <textarea name="user-text" id="user-text" class="modal-user-text"
                         placeholder="Text input"></textarea>
                 </div>
-                <p class="modal-p">I accept the terms and conditions of the <a href="">Privacy Policy</a></p>
+                <div class="modal-field modal-check">
+                    <input type="checkbox" name="modal-checkbox" id="modal-checkbox"
+                        class="checkbox-input visually-hidden" />
+                    <label for="modal-checkbox" class="text-checkbox"> <span>
+                            <svg class="modal-checkbox-icon" width="10" height="10">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the<a href="">Privacy Policy</a>
+                    </label>
+                </div>
                 <button type="submit" class="modal-send-btn">Send</button>
-            </form>
         </div>
+        </form>
+    </div>
     </div>
 </body>
 
