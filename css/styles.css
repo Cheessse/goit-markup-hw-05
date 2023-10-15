@@ -570,9 +570,10 @@ address {
     background-color: rgba(46, 47, 66, 0.40);
     top: 0;
     left: 0;
-    opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -604,7 +605,7 @@ address {
     position: absolute;
     top: 24px;
     right: 24px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -615,7 +616,9 @@ address {
     border: none;
 }
 
-.modal-btn-icon {}
+.modal-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-title {
     color: #2E2F42;
@@ -646,7 +649,6 @@ address {
 
 .modal-input-wrap {
     position: relative;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-input {
@@ -708,6 +710,10 @@ address {
 }
 
 .modal-check {
+    margin-bottom: 24px;
+}
+
+.modal-textarea {
     margin-bottom: 16px;
 }
 
@@ -749,6 +755,8 @@ address {
     border: 1px solid rgba(46, 47, 66, 0.40);
     margin-right: 8px;
     fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -765,7 +773,7 @@ address {
     border-radius: 4px;
     background-color: #4D5AE5;
     padding: 16px 32px;
-    min-width: 170px;
+    min-width: 169px;
     height: 56px;
     display: block;
     margin: 0 auto;
