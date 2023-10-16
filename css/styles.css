@@ -533,6 +533,7 @@ address {
     height: 40px;
     padding: 0 16px;
     background-color: transparent;
+    outline: transparent;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
